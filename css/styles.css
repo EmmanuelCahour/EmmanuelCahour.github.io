@@ -1,0 +1,27 @@
+html {
+    background-color: black;
+}
+
+body {
+    color:white;
+    width: 60%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    color:white;
+    font-size: 3em;
+    text-align: center;
+}
+
+img {
+    margin: auto;
+    display : flex;
+    justify-content: center;
+}
