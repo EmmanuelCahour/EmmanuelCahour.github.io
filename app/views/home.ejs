@@ -1,0 +1,26 @@
+<%- include ('partials/header') %>
+
+<div id="container" class="container">
+    <div class="intro" id="intro">
+        <h1>Evening, traveler.</h1>
+        <img src="../images/solaire.gif" alt="solaire" class="intro-img">
+        <h2 class="beware">Beware ...</h2>
+    </div>
+
+    <div class="articles">
+
+        <% for(const game of games) { %>
+        <article class="article article-old" alt="<%= game.name %>">
+            <a href="/game/<%= game.id %>">
+                <img src="<%= game.image %>" class="article-img">
+            </a>
+            <h2 class="article-title"><%= game.name %></h2>
+            <p class="article-description"><%= game.description %></p>
+        </article>
+        <% } %>
+
+    </div>
+</div>
+</main>
+
+<%- include ('partials/footer') %>
